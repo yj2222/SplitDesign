@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SplitDesign</title>
+
+  <!-- 約半JP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.css">
+
+  <!-- GoogleFont（Roboto数字のみ＋Noto Sans JP） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&text=0123456789">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+
+  <!-- 個別CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- scrollPoint[S] -->
+  <div class="splitSlider">
+    <div class="splitSliderWrap">
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-01.webp" alt="">
+        </div>
+      </div>
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-02.webp" alt="">
+        </div>
+      </div>
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-03.webp" alt="">
+        </div>
+      </div>
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-04.webp" alt="">
+        </div>
+      </div>
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-05.webp" alt="">
+        </div>
+      </div>
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-06.webp" alt="">
+        </div>
+      </div>
+      <div class="splitSliderItem">
+        <div class="splitSliderItem_img">
+          <img src="./img/img-firefly-01.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scrollPoint[E] -->
+
+  <!-- splitHdr[S] -->
+  <header class="splitHdr">
+    <div class="splitHdrSpBtn"></div>
+    <nav class="splitHdrNav">
+      <ul>
+        <li><a class="apllyBtn" href="#sec1">Menu1</a></li>
+        <li><a class="apllyBtn" href="#sec2">Menu2</a></li>
+        <li><a class="apllyBtn" href="#sec3">Menu3</a></li>
+        <li><a class="apllyBtn" href="#sec4">Menu4</a></li>
+        <li><a class="apllyBtn" href="#sec5">Menu5</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- splitHdr[E] -->
+
+  <!-- splitContents[S] -->
+  <div class="splitContents">
+    <main class="splitMain">
+      <div class="mv">
+        <div class="mvTtl">サンプルテキスト</div>
+        <div class="mvText">
+          <picture>
+            <source media="(max-width: 900px)" srcset="./img/img-firefly-01.webp">
+            <img src="./img/img-firefly-01.webp" alt="Adobe Firefly">
+          </picture>
+        </div>
+        <div class="mvDesc">
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+        </div>
+      </div>
+      <section class="splitSec js-scrollPoint" id="sec1">
+        <h2 class="splitSecTtl">サンプルテキスト</h2>
+        <div class="splitSecBlk">
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+        </div>
+        <div class="splitSecBlk">
+          <div class="sec01img">
+            <img src="./img/img-firefly-02.webp" alt="">
+          </div>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn">show more</a>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn is-second">show more</a>
+        </div>
+      </section>
+      <section class="splitSec js-scrollPoint" id="sec2">
+        <h2 class="splitSecTtl">サンプルテキスト</h2>
+        <div class="splitSecBlk">
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+        </div>
+        <div class="splitSecBlk">
+          <div class="sec01img">
+            <img src="./img/img-firefly-03.webp" alt="">
+          </div>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn">show more</a>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn is-second">show more</a>
+        </div>
+      </section>
+      <section class="splitSec js-scrollPoint" id="sec3">
+        <h2 class="splitSecTtl">サンプルテキスト</h2>
+        <div class="splitSecBlk">
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+        </div>
+        <div class="splitSecBlk">
+          <div class="sec01img">
+            <img src="./img/img-firefly-04.webp" alt="">
+          </div>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn">show more</a>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn is-second">show more</a>
+        </div>
+      </section>
+      <section class="splitSec js-scrollPoint" id="sec4">
+        <h2 class="splitSecTtl">サンプルテキスト</h2>
+        <div class="splitSecBlk">
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+        </div>
+        <div class="splitSecBlk">
+          <div class="sec01img">
+            <img src="./img/img-firefly-05.webp" alt="">
+          </div>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn">show more</a>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn is-second">show more</a>
+        </div>
+      </section>
+      <section class="splitSec js-scrollPoint" id="sec5">
+        <h2 class="splitSecTtl">サンプルテキスト</h2>
+        <div class="splitSecBlk">
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+          <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト。</p>
+        </div>
+        <div class="splitSecBlk">
+          <div class="sec01img">
+            <img src="./img/img-firefly-06.webp" alt="">
+          </div>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn">show more</a>
+        </div>
+        <div class="splitSecBlk">
+          <a href="" class="apllyBtn is-second">show more</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="splitFtr">
+      <small class="splitFtr_copy">&copy; SplitDesign SmapleSite</small>
+    </footer>
+  </div>
+  <!-- splitContents[E] -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

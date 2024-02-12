@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.8333333333vw;
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 1.6666666667vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 2.5641025641vw;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: YakuHanJP, "Roboto", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: linear-gradient(#F7DCDE, #F4E7A1);
+  background-attachment: fixed;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.apllyBtn {
+  display: block;
+  border: 0.1rem solid #623F2A;
+  color: #623F2A;
+  text-decoration: none;
+  padding: 1rem;
+  height: 100%;
+}
+
+/* ===================================================
+particles-js
+=================================================== */
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  #particles-js {
+    display: none;
+  }
+}
+
+/* ===================================================
+splitHdr
+=================================================== */
+.splitHdr {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0.2rem solid #623F2A;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .splitHdr {
+    background: #F9F6F1;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transform: translateY(-10%);
+    transition: 0.3s;
+  }
+  .splitHdr.is-active {
+    transform: translateY(-100%);
+  }
+  .splitHdr.is-active .splitHdrSpBtn::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .splitHdrSpBtn {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 6rem;
+    height: 3rem;
+    background: #FDD84B;
+    transform: translateY(-100%);
+    border: 0.2rem solid #623F2A;
+    border-bottom: none;
+    border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+  }
+  .splitHdrSpBtn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 1.5rem solid rgba(0, 0, 0, 0);
+    border-right: 1.5rem solid rgba(0, 0, 0, 0);
+    border-bottom: 1.5rem solid #623F2A;
+  }
+}
+
+.splitHdr_logo {
+  padding: 3rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .splitHdr_logo {
+    display: none;
+  }
+}
+
+.splitHdrNav {
+  margin-top: auto;
+  background: #F9F6F1;
+  padding: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .splitHdrNav {
+    margin-top: 0;
+  }
+}
+.splitHdrNav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* ===================================================
+splitContents
+=================================================== */
+.splitContents {
+  width: 50%;
+  margin-left: auto;
+  background: #F9F6F1;
+  border-left: 1rem solid #623F2A;
+  border-right: 1rem solid #623F2A;
+}
+@media screen and (max-width: 900px) {
+  .splitContents {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .splitContents {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* ===================================================
+splitMain
+=================================================== */
+.splitMain {
+  padding: 2rem 0;
+}
+
+/* ===================================================
+mv
+=================================================== */
+.mv {
+  padding: 4rem 2rem 2rem;
+}
+@media screen and (min-width: 901px) {
+  .mv {
+    display: none;
+  }
+}
+
+.mvText {
+  text-align: center;
+}
+.mvText img {
+  width: 60%;
+}
+
+/* ===================================================
+splitSec
+=================================================== */
+.splitSec {
+  padding: 4rem 2rem;
+}
+.splitSec + .splitSec {
+  border-top: 0.2rem dotted #623F2A;
+}
+.splitSec .apllyBtn {
+  width: 80%;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.splitSec .apllyBtn.is-second {
+  font-size: 1.8rem;
+  width: 70%;
+}
+
+.splitSecTtl {
+  font-size: 3rem;
+  text-align: center;
+  color: #623F2A;
+}
+
+.splitSecBlk {
+  margin-top: 2rem;
+}
+
+.sec01img {
+  background: linear-gradient(#F7DCDE, #F4E7A1);
+  padding: 3rem 5rem;
+  border-radius: 0 30%;
+}
+
+/* ===================================================
+splitFtr
+=================================================== */
+.splitFtr {
+  background: #E8E6D9;
+  color: #623F2A;
+  padding: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .splitFtr {
+    padding: 2rem 2rem 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

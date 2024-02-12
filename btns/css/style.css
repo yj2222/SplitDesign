@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.8333333333vw;
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 1.6666666667vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 2.5641025641vw;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: YakuHanJP, "Roboto", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background-attachment: fixed;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.inner {
+  max-width: 800px;
+  margin: 100px auto;
+}
+
+.btn01 {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  border: 0.1rem solid #333;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  position: relative;
+}
+
+.btn01Label {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(154deg, #333 50%, rgba(0, 0, 0, 0) 50%);
+  width: 10rem;
+  height: 5rem;
+  padding: 0.5rem 0 0 0.5rem;
+  letter-spacing: -0.1em;
+}
+
+.btn01Text {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn01Text_icon {
+  height: 3rem;
+}
+.btn01Text_icon img {
+  height: 100%;
+}
+
+.btn01Label_num {
+  font-size: 1.6rem;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
