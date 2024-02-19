@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 90%;
+        height: 50vh;
+        padding: 0 3em;
+        margin: 3em auto;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-slide {
+        width: 40%;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        top: 0;
+        width: 3em;
+        height: 100%;
+        margin-top: 0;
+      }
+
+      .swiper-button-next {
+        background: linear-gradient(90deg, transparent 30%, #fff);
+      }
+
+      .swiper-button-prev {
+        background: linear-gradient(90deg, #fff 70%, transparent);
+      }
+
+      .swiper-button-next,
+      .swiper-rtl .swiper-button-prev {
+        right: 0;
+        left: auto;
+      }
+
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/img-firefly-01.webp" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/img-firefly-02.webp" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/img-firefly-03.webp" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/img-firefly-04.webp" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/img-firefly-05.webp" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/img-firefly-06.webp" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        // centeredSlides: true,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
